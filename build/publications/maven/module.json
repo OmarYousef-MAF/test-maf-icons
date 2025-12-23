@@ -3,7 +3,7 @@
   "component": {
     "group": "com.test.icons",
     "module": "test-maf-icons",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "attributes": {
       "org.gradle.status": "release"
     }
@@ -25,13 +25,13 @@
       },
       "files": [
         {
-          "name": "test-maf-icons-1.0.0.jar",
-          "url": "test-maf-icons-1.0.0.jar",
-          "size": 261,
-          "sha512": "1487e5a20c9e4d74f298e07c42e96a61be11b7a768c3fbc199ee138cd68e1fc2267d1cfe3f11f288acc05df755315344d052cc5f6f751f126ab4fe1caa5125ea",
-          "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
-          "sha1": "2ad14aed781c4a73ed4dbb421966d408a0a06686",
-          "md5": "f43436d6bec321290f6af228ad602604"
+          "name": "test-maf-icons-1.0.1.jar",
+          "url": "test-maf-icons-1.0.1.jar",
+          "size": 1780,
+          "sha512": "34d4106dbe5534bbfcf37a0d1266c6f5f6e00a621288045639072b91c5928b0f3cfd137eb524a89b2fe6f22effded93609747c737f39ec6012673460cce625c8",
+          "sha256": "46fcff017a4055397287eb15326bd8560179fee914587f18cf6f891faecc0c78",
+          "sha1": "a3a823f87d7053dc0af89373708feac0cc580023",
+          "md5": "4445df7dceec501cb6431cf61d645983"
         }
       ]
     },
@@ -46,13 +46,13 @@
       },
       "files": [
         {
-          "name": "test-maf-icons-1.0.0.jar",
-          "url": "test-maf-icons-1.0.0.jar",
-          "size": 261,
-          "sha512": "1487e5a20c9e4d74f298e07c42e96a61be11b7a768c3fbc199ee138cd68e1fc2267d1cfe3f11f288acc05df755315344d052cc5f6f751f126ab4fe1caa5125ea",
-          "sha256": "c6deada2fac53b8ea6523dbda77597b128006674616f140f04df23264c6d1aa3",
-          "sha1": "2ad14aed781c4a73ed4dbb421966d408a0a06686",
-          "md5": "f43436d6bec321290f6af228ad602604"
+          "name": "test-maf-icons-1.0.1.jar",
+          "url": "test-maf-icons-1.0.1.jar",
+          "size": 1780,
+          "sha512": "34d4106dbe5534bbfcf37a0d1266c6f5f6e00a621288045639072b91c5928b0f3cfd137eb524a89b2fe6f22effded93609747c737f39ec6012673460cce625c8",
+          "sha256": "46fcff017a4055397287eb15326bd8560179fee914587f18cf6f891faecc0c78",
+          "sha1": "a3a823f87d7053dc0af89373708feac0cc580023",
+          "md5": "4445df7dceec501cb6431cf61d645983"
         }
       ]
     }

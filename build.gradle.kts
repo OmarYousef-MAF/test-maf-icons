@@ -19,6 +19,10 @@ sourceSets {
     }
 }
 
+tasks.withType<ProcessResources> {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
 publishing {
     publications {
         create<MavenPublication>("maven") {
@@ -58,12 +62,17 @@ publishing {
     }
     
     repositories {
-        maven {
-            name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/OmarYousef-MAF/test-maf-icons")
-            credentials {
-                username = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.user") as String?
-                password = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.token") as String?
+        val githubUsername = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.user") as String?
+        val githubToken = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.token") as String?
+
+        if (githubUsername != null && githubToken != null) {
+            maven {
+                name = "GitHubPackages"
+                url = uri("https://maven.pkg.github.com/OmarYousef-MAF/test-maf-icons")
+                credentials {
+                    username = githubUsername
+                    password = githubToken
+                }
             }
         }
     }

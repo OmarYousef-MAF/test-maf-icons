@@ -9,7 +9,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.test.icons</groupId>
   <artifactId>test-maf-icons</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <name>Test MAF Icons</name>
   <description>Test icon library with SVG files</description>
   <url>https://github.com/OmarYousef-MAF/test-maf-icons</url>
