@@ -3,7 +3,7 @@ plugins {
     `java-library`
 }
 
-group = "com.test.icons"
+group = "com.majidalfuttaim.icons"
 version = project.property("version") as String
 
 java {
@@ -26,41 +26,27 @@ tasks.withType<ProcessResources> {
 publishing {
     publications {
         create<MavenPublication>("maven") {
-            groupId = "com.test.icons"
-            artifactId = "test-maf-icons"
+            groupId = "com.majidalfuttaim.icons"
+            artifactId = "maf-icons"
             version = project.version.toString()
-            
+
             from(components["java"])
-            
+
             pom {
-                name.set("Test MAF Icons")
-                description.set("Test icon library with SVG files")
-                url.set("https://github.com/OmarYousef-MAF/test-maf-icons")
-                
+                name.set("MAF Icons")
+                description.set("MAF Design System Icons for Mobile")
+                url.set("https://github.com/majidalfuttaim/maf-icons-mobile")
+
                 licenses {
                     license {
                         name.set("MIT License")
                         url.set("https://opensource.org/licenses/MIT")
                     }
                 }
-                
-                developers {
-                    developer {
-                        id.set("OmarYousef-MAF")
-                        name.set("Your Name")
-                        email.set("your.email@example.com")
-                    }
-                }
-                
-                scm {
-                    connection.set("scm:git:git://github.com/OmarYousef-MAF/test-maf-icons.git")
-                    developerConnection.set("scm:git:ssh://github.com/OmarYousef-MAF/test-maf-icons.git")
-                    url.set("https://github.com/OmarYousef-MAF/test-maf-icons")
-                }
             }
         }
     }
-    
+
     repositories {
         val githubUsername = System.getenv("GITHUB_ACTOR") ?: project.findProperty("gpr.user") as String?
         val githubToken = System.getenv("GITHUB_TOKEN") ?: project.findProperty("gpr.token") as String?
@@ -68,7 +54,7 @@ publishing {
         if (githubUsername != null && githubToken != null) {
             maven {
                 name = "GitHubPackages"
-                url = uri("https://maven.pkg.github.com/OmarYousef-MAF/test-maf-icons")
+                url = uri("https://maven.pkg.github.com/majidalfuttaim/maf-icons-mobile")
                 credentials {
                     username = githubUsername
                     password = githubToken

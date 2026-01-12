@@ -1,1 +1,1 @@
-rootProject.name = "test-maf-icons"
+rootProject.name = "maf-icons-mobile"
